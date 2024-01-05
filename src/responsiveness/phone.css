@@ -1,0 +1,80 @@
+@media  only  screen and (max-width: 480px) {
+    .Header{
+        width: 100%;
+    }
+ .Header > nav{
+    width: 100%;
+    padding: 20px 15px;
+    /* border: 1px solid red; */
+
+ }
+ 
+    nav > .links{
+    display: none;
+  }
+  nav > .links > li:hover{
+    background-color: rgba(0, 0, 0, 0.13);
+    cursor: pointer;
+  }
+  nav > .links2{
+    display: none;
+  }
+  nav .logo {
+    z-index: 100;
+  }
+  
+ nav>  .links-responsive-link{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    /* border: 1px solid red; */
+    top: 0%;
+    left: 0%;
+    padding: 60px 10px;
+    z-index: 99;
+    gap: 0px;
+    /* margin-top: 20px; */
+    position: absolute;
+    background-color: white;
+    color: black;
+    height: 100%;
+
+  }
+ 
+  .links-responsive-link li{
+   padding:  10px 20px;
+   font-size: 20px;
+   margin: 10px 0;
+  }
+
+  .burger{
+    display: flex;
+    font-size: 25px;
+    color: rgb(0, 0, 0);
+    z-index: 100;
+  }
+  .bottomheader{
+    width: 100%;
+  }
+  .secondbottom >.btns{
+width: 100%;
+/* border: 1px solid red; */
+justify-content: 
+center ;
+  }
+  .secondbottom >.para {
+text-align: center;
+    /* border: 1px solid red; */
+  }
+  .btns> .btn1{
+    width: 190px;
+font-size: 15px;
+
+  }
+  .btns> .btn2{
+    width: 190px;
+font-size: 15px;
+
+  }
+ 
+}
