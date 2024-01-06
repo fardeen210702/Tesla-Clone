@@ -76,5 +76,18 @@ font-size: 15px;
 font-size: 15px;
 
   }
+  .buttons > p{
+    width: 100%;
+    /* border: 1px solid red; */
+    text-align: center;
+  }
+  .vehiclescomp{
+    width: 100vw;
+  }
+  .vehiclecontainer > img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    }
  
 }
