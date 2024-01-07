@@ -12,14 +12,14 @@ function VehiclesComp() {
  const tl = gsap.timeline()
  tl.from('.vehiclecontainer .btnsinfo1',{
     opacity:0,
-    y:50,
+    y:150,
     // duration:1.7,
     stagger:.9,
     scrollTrigger:{
         trigger:'.btnsinfo1',
         // markers:true,
         scrub:true,
-        start:'top 20%',
+        start:'top 70%',
         end:'bottom 80%',
     }
  })

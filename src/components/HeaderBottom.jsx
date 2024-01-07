@@ -9,11 +9,11 @@ function HeaderBottom() {
       const tl = gsap.timeline()
       tl.from('.bottomheader .midheader',{
         y:-50,
-        delay:.5,
+        delay:.8,
         opacity:0,  
       }).from('.bottomheader .secondbottom',{
         y:-50,
-        delay:.3,
+        delay:.6,
         opacity:0,
       })
      },flag)
