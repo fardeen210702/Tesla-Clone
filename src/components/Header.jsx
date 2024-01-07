@@ -7,6 +7,7 @@ import Logo from '../assets/images-20240102T191737Z-001/images/logo.svg'
 import HeaderBottom from './HeaderBottom';
 function Header() {
     const [toggle, setToggle] = useState(false)
+   
   return (
     <>
     <div className='Header'>
@@ -18,8 +19,8 @@ function Header() {
                 <img src={Logo} alt=""  />
             </div>
             <div className= {toggle ?'links links-responsive-link' : 'links'}>
-                <li>Vehicles</li>
-                <li>Energy</li>
+                <li >Vehicles</li>
+                <li >Energy</li>
                 <li>Charging</li>
                 <li>Discover</li>
                 <li>Shop</li>

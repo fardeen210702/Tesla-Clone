@@ -17,6 +17,7 @@
     display: flex;
     justify-content: space-between;
     width: 100%;
+    z-index: 101;
     height: min-content;
     /* border: 2px solid red; */
     max-width: 1300px;
@@ -118,17 +119,17 @@ gap: 10px;
 }
 .vehiclescomp{
     width: 1300px;
-    background-color: red;
+    /* background-color: red; */
     height: 100vh;
 }
 .vehiclesloop{
     width: 100%;
     height: 100%;
-    border: 2px solid black;
+    /* border: 2px solid black; */
 }
 .vehiclecontainer{
     width: 100%;
-    height: 100%;
+    height: 100vh;
     position: relative;
 }
 .vehiclecontainer > img{
@@ -136,13 +137,16 @@ z-index: -1;
 width: 100%;
 height: 100%;
 object-fit: cover;
+position: absolute;
+top: 0;
+left: 0;
 }
  .vehiclecontainer >.btnsinfo1{
-    position: absolute;
+    /* position: absolute; */
     height: 100%;
     width: 100%;
-    top: 0%;
-    left: 0%;
+    /* top: 0%;
+    left: 0%; */
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -172,4 +176,20 @@ object-fit: cover;
 .buttons > .btns{
 display: flex;gap: 10px;
 text-align: center;
+}
+.footer{
+    width: 1300px;
+    background-color: black;
+/* border: 2px solid red; */
+/* z-index: 100; */
+color: white;
+padding: 25px 0;
+
+}
+.innerfooter{
+    width: 100%;
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+
 }

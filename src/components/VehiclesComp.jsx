@@ -1,9 +1,12 @@
-import React from 'react'
+import React, { useLayoutEffect } from 'react'
 import Data from '../Data'
 
+
+
 function VehiclesComp() {
+    
   return (
-    <div className='vehiclescomp'>
+    <div className='vehiclescomp' >
         <div className="vehiclesloop">
             {
                 Data.map((el,index)=>{

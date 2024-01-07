@@ -16,23 +16,7 @@
         "peakPower": "1,020",
         'price':'71,090',
     },
-    {
-        "id": 1,
-        "title": "Model 3",
-        "description": "Order Online for Touchless Delivery",
-        'mainImage':'src/assets/images-20240102T191737Z-001/images/model-3.jpg' ,
-        "image": "https://digitalassets.tesla.com/tesla-contents/image/upload/f_auto,q_auto/Mega-Menu-Vehicles-Model-3.png",
-        'video': 'https://digitalassets.tesla.com/tesla-contents/video/upload/f_auto,q_auto/Model-S-Main-Hero-Desktop-LHD-Animation.webm',
-        'video1': 'https://digitalassets.tesla.com/tesla-contents/video/upload/f_auto,q_auto:best/MS-Interior-Carousel-2-Yoke-Desktop.mp4',
-        "range": "400",
-        'video2': 'https://digitalassets.tesla.com/tesla-contents/video/upload/f_auto,q_auto/Model-3-Autopilot-Carousel-Slide-3-Global.mp4',
-
-        "time": "2.99",
-        "topSpeed": "180",
-        "peakPower": "900",
-        'price':'61,090',
-
-    },
+   
     {
         "id": 2,
         "title": "Model X",
@@ -65,7 +49,24 @@
         "peakPower": "1,040",
         'price':'68,090',
 
-    }
+    },
+    {
+        "id": 1,
+        "title": "Model 3",
+        "description": "Order Online for Touchless Delivery",
+        'mainImage':'src/assets/images-20240102T191737Z-001/images/model-3.jpg' ,
+        "image": "https://digitalassets.tesla.com/tesla-contents/image/upload/f_auto,q_auto/Mega-Menu-Vehicles-Model-3.png",
+        'video': 'https://digitalassets.tesla.com/tesla-contents/video/upload/f_auto,q_auto/Model-S-Main-Hero-Desktop-LHD-Animation.webm',
+        'video1': 'https://digitalassets.tesla.com/tesla-contents/video/upload/f_auto,q_auto:best/MS-Interior-Carousel-2-Yoke-Desktop.mp4',
+        "range": "400",
+        'video2': 'https://digitalassets.tesla.com/tesla-contents/video/upload/f_auto,q_auto/Model-3-Autopilot-Carousel-Slide-3-Global.mp4',
+
+        "time": "2.99",
+        "topSpeed": "180",
+        "peakPower": "900",
+        'price':'61,090',
+
+    },
 ]
 
 export default products
