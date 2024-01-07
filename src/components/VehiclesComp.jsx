@@ -1,12 +1,34 @@
 import React, { useLayoutEffect } from 'react'
 import Data from '../Data'
-
-
+import { useRef } from 'react'
+import gsap from 'gsap'
+import {ScrollTrigger} from 'gsap/ScrollTrigger'
+gsap.registerPlugin(ScrollTrigger)
 
 function VehiclesComp() {
+    const flag = useRef(null)
+    useLayoutEffect(() => {
+      let ctx = gsap.context(()=>{
+ const tl = gsap.timeline()
+ tl.from('.vehiclecontainer .btnsinfo1',{
+    opacity:0,
+    y:50,
+    // duration:1.7,
+    stagger:.9,
+    scrollTrigger:{
+        trigger:'.btnsinfo1',
+        // markers:true,
+        scrub:true,
+        start:'top 20%',
+        end:'bottom 80%',
+    }
+ })
+      },flag)
     
+      return () => ctx.revert() 
+    }, [])
   return (
-    <div className='vehiclescomp' >
+    <div className='vehiclescomp' ref={flag}>
         <div className="vehiclesloop">
             {
                 Data.map((el,index)=>{
