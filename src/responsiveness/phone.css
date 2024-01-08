@@ -41,7 +41,7 @@
 
   }
  
-  .links-responsive-link li{
+  .links-responsive-link >  li{
    padding:  10px 20px;
    font-size: 20px;
    margin: 10px 0;
@@ -89,5 +89,16 @@ font-size: 15px;
     height: 100%;
     object-fit: cover;
     }
- 
+    .maincontainer{
+      overflow-y: scroll;
+      height: 100vh;
+      flex-direction: column;
+    }
+ .maincontainer > .firstcontainer{
+  width: 100%;
+  display: flex;
+ }
+ .maincontainer .secondcontainer{
+  width: 100%;
+ }
 }

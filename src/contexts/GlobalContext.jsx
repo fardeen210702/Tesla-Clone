@@ -7,14 +7,35 @@ function GlobalContext({children}) {
     const initialState = {
         displayVehicle : false,
         displayEnergy : false,
+        displayCharging : false,
+        displayDiscover : false,
+        displayShop : false,
+        
     }
 
     const [state, dispatch] = useReducer(reducer, initialState)
 
-
+function mouseEnterVehicle(){
+  dispatch({type:'update_vehicle_state'})
+}
+function mouseEnterEnergy(){
+  dispatch({type:'update'})
+}
+function mouseEnterCharging(){
+  dispatch({type:'mouseEnterCharging'})
+}
+function mouseEnterDiscover(){
+  dispatch({type:'mouseEnterDiscover'})
+}
+function mouseEnterShop(){
+  dispatch({type:'mouseEnterShop'})
+}
+function mouseEnterLogo(){
+  dispatch({type:'mouseEnterLogo'})
+}
     
   return (
-    <Gcontext.Provider value={{...state}}>{children}
+    <Gcontext.Provider value={{...state,mouseEnterVehicle,mouseEnterEnergy,mouseEnterCharging,mouseEnterDiscover,mouseEnterShop,mouseEnterLogo}}>{children}
     </Gcontext.Provider>
   )
 }
